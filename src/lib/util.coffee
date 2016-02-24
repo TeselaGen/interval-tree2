@@ -6,7 +6,7 @@ class Util
         if not val?
             throw new Error(desc + ' is required.')
 
-        if typeof val isnt 'number'
+        if typeof val isnt 'number' or isNaN val
             throw new Error(desc + ' must be a number.')
 
 
